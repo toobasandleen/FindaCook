@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using FindaCook.Services;
 
 namespace LoginApp.Maui.ViewModels
 {
@@ -10,11 +11,12 @@ namespace LoginApp.Maui.ViewModels
 
         [ObservableProperty]
         private string password;
+        readonly ILoginRespository loginService = new LoginService();
 
         [RelayCommand]
         public async void SignIn()
         {
-            Console.Write("");
+            
         }
 
     }
