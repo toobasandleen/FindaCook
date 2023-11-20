@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace LoginApp.Maui.ViewModels
 {
@@ -9,5 +10,12 @@ namespace LoginApp.Maui.ViewModels
 
         [ObservableProperty]
         private string password;
+
+        [RelayCommand]
+        public async void SignIn()
+        {
+            Console.Write("");
+        }
+
     }
 }
